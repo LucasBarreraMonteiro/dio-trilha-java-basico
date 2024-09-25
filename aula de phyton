@@ -1,0 +1,396 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNhOciDKeFfGbLZZaHfL/jN",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LucasBarreraMonteiro/dio-trilha-java-basico/blob/main/aula%20de%20phyton\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "GXQyxMuhOST_",
+        "outputId": "b350b42b-202b-4f5e-e2d3-64b2baa36cef"
+      },
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "unterminated string literal (detected at line 15) (<ipython-input-4-207c0662b5f9>, line 15)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-4-207c0662b5f9>\"\u001b[0;36m, line \u001b[0;32m15\u001b[0m\n\u001b[0;31m    print(f{nome}, bem-vindo à disciplina de programação. Parabéns pelo seu primeiro hello world\")\u001b[0m\n\u001b[0m                                                                                                ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m unterminated string literal (detected at line 15)\n"
+          ]
+        }
+      ],
+      "source": [
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numeros = [1, 2, 3, 4, 5]\n",
+        "for num in numeros:\n",
+        "  print(num)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pTVeQmk_YuxN",
+        "outputId": "ce4afef6-0a7a-461f-88bf-aaf309fca0c6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 'aluno'\n",
+        "b = 'aluna'\n",
+        "\n",
+        "a is b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gZ_f7BEtRrgZ",
+        "outputId": "f1cfad65-872e-4275-a5c0-cf8bcf1309c2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "idade = 18\n",
+        "\n",
+        "if idade < 18:\n",
+        "    print(\"menor de idade\")\n",
+        "elif idade >= 18 and idade < 65:\n",
+        "    print(\"adulto\")\n",
+        "else:\n",
+        "    print(\"idoso\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9jwM10MpShXI",
+        "outputId": "cb3298d7-f4ad-44ba-bc9f-d82735438284"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "adulto\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 11,'a',True]\n",
+        "\n",
+        "comprimento = len(numeros)\n",
+        "\n",
+        "print(\"o comprimento da lista é:\", comprimento)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7lKZKKfdNhEL",
+        "outputId": "ac48c2a7-06cd-4432-8f9a-edea8d3b2b68"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "o comprimento da lista é: 14\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#definindo uma funçao de \"soma\"\n",
+        "\n",
+        "def soma(a, b):\n",
+        "   resultado = a + b\n",
+        "   return resultado\n",
+        ""
+      ],
+      "metadata": {
+        "id": "9xbsqbTCQZeC"
+      },
+      "execution_count": 10,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "resultado_soma = soma(10, 50)\n",
+        "\n",
+        "#imprimindo resultado\n",
+        "print(\"a soma de 10 e 50 é:\", resultado_soma)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CLggGKxQRM4h",
+        "outputId": "e7c0d8fe-27d6-4266-cdfd-eae1b3cb4430"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a soma de 10 e 50 é: 60\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#definindo uma funcao chamada \"e_par\"\n",
+        "def e_par(numero):\n",
+        "  if numero % 2 == 0:\n",
+        "    return True\n",
+        "  else:\n",
+        "    return False\n"
+      ],
+      "metadata": {
+        "id": "WYWha6NTRtWj"
+      },
+      "execution_count": 18,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = 53\n",
+        "if e_par(numero):\n",
+        "    print(f\"{numero} é numero par.\")\n",
+        "else:\n",
+        "    print(f\"{numero} não e um numero par.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FDBt0sJRSUv-",
+        "outputId": "241cefbf-7a0c-4481-9ebf-3867cf90ed94"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "53 não e um numero par.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "notas = [7.5, 8.0, 6.5, 9.0, 7.0]\n",
+        "\n",
+        "\n",
+        "\n",
+        "# Função regular para calcular a média\n",
+        "\n",
+        "def calcular_media(notas):\n",
+        "\n",
+        "    total = sum(notas)\n",
+        "\n",
+        "    media = total / len(notas)\n",
+        "\n",
+        "    return media\n",
+        "\n",
+        "\n",
+        "\n",
+        "# Função lambda para arredondar a média para duas casas decimais\n",
+        "\n",
+        "arredondar_media = lambda media: round(media, 2)\n",
+        "\n",
+        "\n",
+        "\n",
+        "# Calcular a média\n",
+        "\n",
+        "media = calcular_media(notas)\n",
+        "\n",
+        "media_arredondada = arredondar_media(media)\n",
+        "\n",
+        "\n",
+        "\n",
+        "# Verificar se os estudantes foram aprovados\n",
+        "\n",
+        "situacao = \"aprovado\" if media_arredondada >= 7 else \"reprovado\"\n",
+        "\n",
+        "\n",
+        "\n",
+        "# Resultados\n",
+        "\n",
+        "print(\"notas dos  estudantes:\", notas)\n",
+        "\n",
+        "print(\"media de notas:\", media_arredondada)\n",
+        "\n",
+        "print(\"situacao do estudante:\", situacao)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0rVmbvz8WuAW",
+        "outputId": "94ba9c5a-2973-431a-c17e-7ec26d1f7e04"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "notas dos  estudantes: [7.5, 8.0, 6.5, 9.0, 7.0]\n",
+            "media de notas: 7.6\n",
+            "situacao do estudante: aprovado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#solicita ao usiario que insira o valor do  produto\n",
+        "valor_produto = float(input(\"digite o valor do produto: R$\"))"
+      ],
+      "metadata": {
+        "id": "EQ-T82JVXZYM"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#calculando percentual de desconto\n",
+        "percentual_desconto = float(input(\"digite o percentual de desconto:\"))"
+      ],
+      "metadata": {
+        "id": "JQm7_EaQerQR"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "UBTUxtsmepGg"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#verifica se o percentual esta dentro dos limites aceitaveis (0 - 10%)\n",
+        "if percentual_desconto < 0 or percentual_desconto > 10:\n",
+        "  print(\"erro: o percentual de desconto deve estar entre 0 e 10%.\")\n",
+        "  else:\n",
+        "    #calcula o valor do desconto\n",
+        "   desconto = valor_produto * (percentual_desconto / 100)"
+      ],
+      "metadata": {
+        "id": "AGrTaqP2dGON"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " #calcula o valor final da compra\n",
+        "valor_produto = valor_produto - desconto"
+      ],
+      "metadata": {
+        "id": "8TOtp3mbdHPg"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#exibe o valor final da compra\n",
+        "print(f\"valor com desconto: R$ {valor_final:.2f}\")"
+      ],
+      "metadata": {
+        "id": "zkxapTgRdo_i"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
